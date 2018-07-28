@@ -5,7 +5,7 @@ Required jquery 1.6+
 Required jqueryui 1.8+
 
 Data types:
-slide-background: url to background-image. Can use on slider and slider container.
+slide-background: url to background-image. Can use on slider and slider container.\n
 slide-color: background-color of slide. Can use on slider and slider container.
 slide-effect: Can use on slide and slider container.
 slide-effect-show: Can use on slide and slider container. Replace slide-effect on show.
