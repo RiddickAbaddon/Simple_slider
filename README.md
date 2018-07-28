@@ -4,6 +4,7 @@ Plug for easy and quick insertion of sliders
 
 
 Required jquery 1.6+
+
 Required jqueryui 1.8+
 
 
