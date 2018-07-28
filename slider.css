@@ -1,0 +1,108 @@
+/* Slider default styles */
+
+.slider-arrow {
+    position: absolute;
+    display: flex;
+    top: 0;
+    z-index: 3;
+    width: 70px;
+    height: 100%;
+    color: white;
+    text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px black, 0 -1px 2px black;
+    font-family: Verdana;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .1s linear;
+    box-shadow: inset 0 0 0 0px rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+.slider-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.432);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.219);
+}
+.slider-arrow-left {
+    left: 0px;
+}
+.slider-arrow-right {
+    right: 0px;
+}
+.slider-thumb-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.slider-thumb-container .active {
+    background-color: black;
+    color: white;
+}
+.slider-thumb-container .active:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.slider-thumb{
+    position: relative;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all .1s linear;
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 0 4px;
+    text-transform: uppercase;
+    user-select: none;
+}
+.slider-thumb:hover {
+    background-color: #ffffff88;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.center-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Demo styles */
+body {
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: white;
+    text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px black, 0 -1px 2px black;
+    font-family: Verdana;
+}
+button {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all .1s linear;
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+button:hover {
+    background-color: #ffffff88;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+}
+button:focus {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+}
