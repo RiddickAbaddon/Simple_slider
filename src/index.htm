@@ -1,0 +1,77 @@
+<!-- Style your slider or link this css file in head tag -->
+<link rel="stylesheet" href="slider.css">
+
+<!-- 
+    Data types:
+    slide-background: url to background-image. Can use on slider and slider container.
+    slide-color: background-color of slide. Can use on slider and slider container.
+    slide-effect: Can use on slide and slider container.
+    slide-effect-show: Can use on slide and slider container. Replace slide-effect on show.
+    slide-effect-hide: Can use on slide and slider container. Replace slide-effect on hide.
+    slide-speed: Can use on slide and slider container.
+
+    use on container to set data to all slides
+    use on slide to set data on one slide
+
+    onclick function: 
+    your_slider_object.change_slide('prev') : use on left arrow
+    your_slider_object.change_slide('next') : use on right arrow
+    your_slider_object.change_slide(1) : use on thumb
+
+    Slider thumbs:
+    To duplicate slider thumbs and automatically set values, write first thumb and set in object configuration required classes
+    write '1' to set numbering 1,2,3....
+    write 'a' to set numbering a,b,c....
+    set in thumb css text-transform: uppercase to set numbering A,B,C....
+    
+    Effects: blind | bounce | clip | drop | fade | fold | puff | pulsate | scale | shake | size | slide
+ -->
+
+<!-- paste it where it should be slider -->
+<div class="slider" style="display: none;">
+    <div class="slide">
+        <div class="center-content">
+            <!-- content -->
+        </div>
+    </div>
+    <div class="slide">
+        <div class="center-content">
+            <!-- content -->
+        </div>
+    </div>
+    <div class="slide">
+        <div class="center-content">
+            <!-- content -->
+        </div>
+    </div>
+
+    <!-- It must be before slides -->
+    <div class="slider-arrow slider-arrow-left" onclick="slider.change_slide('prev')">&lang;</div>
+    <div class="slider-arrow slider-arrow-right" onclick="slider.change_slide('next')">&rang;</div>
+    <div class="slider-thumb-container">
+        <div class="slider-thumb" onclick="slider.change_slide(1)">1</div>
+    </div>
+</div>
+
+<!-- Paste it at the end of the body tag -->
+
+<script src="jQuery.js"></script> <!-- required <!> -->
+<script src="jquery-ui.min.js"></script> <!-- required <!> -->
+<script src="slider.js"></script>
+<script>
+    var slider = new slider_init({
+        container: ".slider", //required <!>
+        slideClass: ".slide", //required <!>
+        thumbContainer: ".slider-thumb-container", //required for thumbs <!>
+        thumbClass: ".slider-thumb", //required for thumbs <!>
+        // width: "100%",
+        //height: "500px",
+        // showTime: 500, // time of start animation
+        // first: 1, // first slide
+        // changeSpeed: 500, //default change speed
+        // defaultEffect: "fade", default change effect
+        //autoload: true,
+        // autoloadTime: 5000,
+        // stopOnInteraction: false //stop on click in slider
+    });
+</script>
